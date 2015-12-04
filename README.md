@@ -19,23 +19,13 @@ git clone --depth=1 https://github.com/apple/swift-corelibs-xctest.git
 git clone --depth=1 https://github.com/apple/swift-corelibs-foundation.git
 ```
 
-build llvm, clang, swift and swift standard library:
+build llvm, clang, swift and swift standard library: `./swift/utils/build-script`
 
-```
-./swift/utils/build-script
-```
+create xcode project capable of building swift: `./swift/utils/build-script --xcode --release`
 
-create xcode project capable of building swift:
+create xcode project for editing swift sources only (no build): `./swift/utils/build-script --xcode-ide-only --release`
 
-```
-./swift/utils/build-script -x -R
-```
-
-create xcode project for editing swift sources:
-
-```
-./swift/utils/build-script -X -R
-```
+use eclipse generator: `/swift/utils/build-script --eclipse --release`
 
 more options of the build script can be found in its help text:
 

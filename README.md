@@ -34,7 +34,7 @@ create xcode project capable of building swift:
 create xcode project for editing swift sources:
 
 ```
-./swift/utils/build-script -x -R
+./swift/utils/build-script -X -R
 ```
 
 more options of the build script can be found in its help text:
